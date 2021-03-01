@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Vue JS Get Checked Radio Button Value on Onchange Event - ItSolutionStuff.com</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+</head>
+
+<body>
+
+    
+
+<div id="app">
+
+  
+
+  <label><input type="radio" name="category_id" @change="onChange($event)" class="form-control" value="1"> Laravel</label>
+
+  <label><input type="radio" name="category_id" @change="onChange($event)" class="form-control" value="2"> Codeigniter</label>
+
+  <label><input type="radio" name="category_id" @change="onChange($event)" class="form-control" value="3"> Vue JS</label>
+
+    
+
+</div>
+
+    
+
+<script type="text/javascript">
+
+    
+
+    var app = new Vue({
+
+      el: '#app',
+
+      methods: {
+
+          onChange(event) {
+
+              var optionText = event.target.value;
+
+              console.log(optionText);
+
+          }
+
+      }
+
+    })
+
+    
+
+</script>
+
+     
+
+</body>
+
+</html>
